@@ -1,0 +1,8 @@
+.product-list-item{
+    display: inline-block;
+    width: 30%;
+    height: 300px;
+    border: 1px solid rebeccapurple;
+    padding: 10px;
+    margin: 10px;
+}

@@ -1,0 +1,11 @@
+li{
+    display: inline-block;
+    list-style: none;
+}
+
+#header{
+    border-bottom: 2px solid gray;
+    background-color: lightblue;
+    padding: 20px;
+    margin-bottom: 10px;
+}
