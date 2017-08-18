@@ -16,14 +16,14 @@ export class ProductDetailsComponent implements OnInit {
   ngOnInit() {
 
     // this.route.params.subscribe(val => {
-    //   this.service.getProductByName(val.productName)
+    //   this.service.getProductById(val.productId)
     //     .subscribe(product => {          
     //       this.myProduct = product;
     //     });
     // });
 
     this.route.params
-      .switchMap(val => this.service.getProductByName(val.productName))
+      .switchMap(val => this.service.getProductById(val.productId))
       .subscribe(product => this.myProduct = product);
 
   }

@@ -7,7 +7,7 @@
         <img width="200" height="200" [src]="p.imgUrl" [alt]="p.name" />
       </div>
       <h4>{{p.price | currency}}</h4>      
-      <a [routerLink]="['product',p.name]">View Details</a>
+      <a [routerLink]="['product',p.id]">View Details</a>
   </div>
 
 </div>

@@ -8,17 +8,17 @@ export class ProductService {
   constructor(private http: Http) { }
 
   getProducts(){
-    return this.http.get('/assets/products.json')
+    return this.http.get('/api/products')
               .map(res => res.json());
   }
 
-  getProductByName(name: string){
-    return this.http.get('/assets/products.json')
-              .map(res => res.json())
-              .map(products => {
-                const product = products.find(p => p.name === name);
-                return product;
-              });
+  addProduct(product){
+    return this.http.post('/api/products', product);
+  }
+
+  getProductById(id: string){
+    return this.http.get('/api/products/'+id)
+              .map(res => res.json());
   }
 
 

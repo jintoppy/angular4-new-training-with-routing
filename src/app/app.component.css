@@ -9,3 +9,11 @@ li{
     padding: 20px;
     margin-bottom: 10px;
 }
+
+#container{
+    padding: 10px;
+}
+
+#content-area{
+    padding: 20px;
+}

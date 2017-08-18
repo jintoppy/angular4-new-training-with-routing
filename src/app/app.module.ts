@@ -12,6 +12,7 @@ import { ProductDetailsComponent } from './pages/product-details/product-details
 import { FooterComponent } from './components/footer/footer.component';
 import { AutocompleteComponent } from './pages/autocomplete/autocomplete.component';
 import { StateService } from './state.service';
+import { AddProductComponent } from './pages/add-product/add-product.component';
 
 const routes = [
   {
@@ -19,11 +20,15 @@ const routes = [
     component: HomeComponent
   },
   {
+    path: 'addproduct',
+    component: AddProductComponent
+  },
+  {
     path: 'about',
     component: AboutComponent
   },
   {
-    path: 'product/:productName',
+    path: 'product/:productId',
     component: ProductDetailsComponent
   },
   {
@@ -39,7 +44,8 @@ const routes = [
     AboutComponent,
     ProductDetailsComponent,
     FooterComponent,
-    AutocompleteComponent
+    AutocompleteComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
